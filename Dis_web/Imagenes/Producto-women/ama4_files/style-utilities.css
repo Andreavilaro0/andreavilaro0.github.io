@@ -1,0 +1,836 @@
+/* All class names here are universal for all clients. They should all be prefixed with `uni-`*/
+:root {
+  --spacing: 0.5rem;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+.uni-caption-margin-bottom-small {
+  @media (max-width: 992px) {
+    .TextAndImage__caption {
+      margin-bottom: var(--layoutLarge);
+    }
+  }
+  @media (max-width: 500px) {
+    .TextAndImage__caption {
+      margin-bottom: var(--layoutSmall);
+    }
+  }
+  @media (max-width: 350px) {
+    .TextAndImage__caption {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.uni-img-gradient-top .TextAndImage__imageWrapper .AspectRatio__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  pointer-events: none;
+}
+
+.uni-img-gradient-bottom .TextAndImage__imageWrapper .AspectRatio__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  pointer-events: none;
+}
+
+.uni-img-gradient-left .TextAndImage__imageWrapper .AspectRatio__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  pointer-events: none;
+}
+
+.uni-img-gradient-right .TextAndImage__imageWrapper .AspectRatio__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  pointer-events: none;
+}
+
+.uni-img-gradient-top-50 .TextAndImage__imageWrapper .AspectRatio__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+}
+
+.uni-img-gradient-bottom-50 .TextAndImage__imageWrapper .AspectRatio__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+}
+
+.uni-img-gradient-left-50 .TextAndImage__imageWrapper .AspectRatio__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+}
+
+.uni-img-gradient-right-50 .TextAndImage__imageWrapper .AspectRatio__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+}
+
+
+/* Set slim banner height in pixels */
+.uni-slim-banner-header .TextAndImage__imageWrapper .AspectRatio__container {
+  padding-bottom: unset;
+  position: static;
+  height: 250px;
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+.uni-slim-banner-header-1000 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 1000px;
+}
+.uni-slim-banner-header-900 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 900px;
+}
+.uni-slim-banner-header-800 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 800px;
+}
+.uni-slim-banner-header-700 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 700px;
+}
+.uni-slim-banner-header-600 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 600px;
+}
+.uni-slim-banner-header-500 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 500px;
+}
+.uni-slim-banner-header-400 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 400px;
+}
+.uni-slim-banner-header-300 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 300px;
+}
+.uni-slim-banner-header-250 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 250px;
+}
+.uni-slim-banner-header-215 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 215px;
+}
+.uni-slim-banner-header-200 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 200px;
+}
+.uni-slim-banner-header-150 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 150px;
+}
+.uni-slim-banner-header-100 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 100px;
+}
+.uni-slim-banner-header-85 .TextAndImage__imageWrapper .AspectRatio__container {
+  height: 85px;
+}
+
+/* Set caption width size in percentage  */
+.uni-caption-width-100 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 100% !important;
+}
+.uni-caption-width-95 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 95% !important;
+}
+.uni-caption-width-90 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 90% !important;
+}
+.uni-caption-width-85 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 85% !important;
+}
+.uni-caption-width-80 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 80% !important;
+}
+.uni-caption-width-75 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 75% !important;
+}
+.uni-caption-width-70 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 70% !important;
+}
+.uni-caption-width-65 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 65% !important;
+}
+.uni-caption-width-60 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 60% !important;
+}
+.uni-caption-width-55 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 55% !important;
+}
+.uni-caption-width-50 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 50% !important;
+}
+.uni-caption-width-45 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 45% !important;
+}
+.uni-caption-width-40 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 40% !important;
+}
+.uni-caption-width-35 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 35% !important;
+}
+.uni-caption-width-30 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 30% !important;
+}
+.uni-caption-width-25 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 25% !important;
+}
+.uni-caption-width-20 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  width: 20% !important;
+}
+
+/* Set caption horizontal padding (left and right) in multiples of sizing units */
+.uni-caption-paddingx-0 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: 0;
+  padding-right: 0;
+}
+.uni-caption-paddingx-1 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*1);
+  padding-right: calc(var(--spacing)*1);
+}
+.uni-caption-paddingx-2 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*2);
+  padding-right: calc(var(--spacing)*2);
+}
+.uni-caption-paddingx-3 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*3);
+  padding-right: calc(var(--spacing)*3);
+}
+.uni-caption-paddingx-4 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*4);
+  padding-right: calc(var(--spacing)*4);
+}
+.uni-caption-paddingx-5 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*5);
+  padding-right: calc(var(--spacing)*5);
+}
+.uni-caption-paddingx-6 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*6);
+  padding-right: calc(var(--spacing)*6);
+}
+.uni-caption-paddingx-7 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*7);
+  padding-right: calc(var(--spacing)*7);
+}
+.uni-caption-paddingx-8 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*8);
+  padding-right: calc(var(--spacing)*8);
+}
+.uni-caption-paddingx-9 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*9);
+  padding-right: calc(var(--spacing)*9);
+}
+.uni-caption-paddingx-10 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*10);
+  padding-right: calc(var(--spacing)*10);
+}
+
+/* Set caption padding-right in multiples of sizing units */
+.uni-caption-paddingr-0 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-right: 0;
+}
+.uni-caption-paddingr-1 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-right: calc(var(--spacing)*1);
+}
+.uni-caption-paddingr-2 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-right: calc(var(--spacing)*2);
+}
+.uni-caption-paddingr-3 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-right: calc(var(--spacing)*3);
+}
+.uni-caption-paddingr-4 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-right: calc(var(--spacing)*4);
+}
+.uni-caption-paddingr-5 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-right: calc(var(--spacing)*5);
+}
+.uni-caption-paddingr-6 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-right: calc(var(--spacing)*6);
+}
+.uni-caption-paddingr-7 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-right: calc(var(--spacing)*7);
+}
+.uni-caption-paddingr-8 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-right: calc(var(--spacing)*8);
+}
+.uni-caption-paddingr-9 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-right: calc(var(--spacing)*9);
+}
+.uni-caption-paddingr-10 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-right: calc(var(--spacing)*10);
+}
+
+/* Set caption padding-left in multiples of sizing units */
+.uni-caption-paddingl-0 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: 0;
+}
+.uni-caption-paddingl-1 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*1);
+}
+.uni-caption-paddingl-2 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*2);
+}
+.uni-caption-paddingl-3 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*3);
+}
+.uni-caption-paddingl-4 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*4);
+}
+.uni-caption-paddingl-5 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*5);
+}
+.uni-caption-paddingl-6 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*6);
+}
+.uni-caption-paddingl-7 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*7);
+}
+.uni-caption-paddingl-8 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*8);
+}
+.uni-caption-paddingl-9 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*9);
+}
+.uni-caption-paddingl-10 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-left: calc(var(--spacing)*10);
+}
+
+/* Set caption padding-top in multiples of sizing units */
+.uni-caption-paddingt-0 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-top: 0;
+}
+.uni-caption-paddingt-1 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-top: calc(var(--spacing)*1);
+}
+.uni-caption-paddingt-2 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-top: calc(var(--spacing)*2);
+}
+.uni-caption-paddingt-3 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-top: calc(var(--spacing)*3);
+}
+.uni-caption-paddingt-4 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-top: calc(var(--spacing)*4);
+}
+.uni-caption-paddingt-5 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-top: calc(var(--spacing)*5);
+}
+.uni-caption-paddingt-6 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-top: calc(var(--spacing)*6);
+}
+.uni-caption-paddingt-7 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-top: calc(var(--spacing)*7);
+}
+.uni-caption-paddingt-8 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-top: calc(var(--spacing)*8);
+}
+.uni-caption-paddingt-9 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-top: calc(var(--spacing)*9);
+}
+.uni-caption-paddingt-10 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-top: calc(var(--spacing)*10);
+}
+
+/* Set caption padding-bottom in multiples of sizing units */
+.uni-caption-paddingb-0 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-bottom: 0;
+}
+.uni-caption-paddingb-1 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-bottom: calc(var(--spacing)*1);
+}
+.uni-caption-paddingb-2 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-bottom: calc(var(--spacing)*2);
+}
+.uni-caption-paddingb-3 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-bottom: calc(var(--spacing)*3);
+}
+.uni-caption-paddingb-4 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-bottom: calc(var(--spacing)*4);
+}
+.uni-caption-paddingb-5 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-bottom: calc(var(--spacing)*5);
+}
+.uni-caption-paddingb-6 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-bottom: calc(var(--spacing)*6);
+}
+.uni-caption-paddingb-7 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-bottom: calc(var(--spacing)*7);
+}
+.uni-caption-paddingb-8 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-bottom: calc(var(--spacing)*8);
+}
+.uni-caption-paddingb-9 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-bottom: calc(var(--spacing)*9);
+}
+.uni-caption-paddingb-10 .TextAndImage__caption .TextAndImage__textOverlay > .Layout__layout{
+  padding-bottom: calc(var(--spacing)*10);
+}
+
+/* Set caption horizontal margin (left and right) in multiples of sizing units */
+.uni-caption-marginx-0 .TextAndImage__caption {
+  margin-left: 0;
+  margin-right: 0;
+}
+.uni-caption-marginx-1 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*1);
+  margin-right: calc(var(--spacing)*1);
+}
+.uni-caption-marginx-2 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*2);
+  margin-right: calc(var(--spacing)*2);
+}
+.uni-caption-marginx-3 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*3);
+  margin-right: calc(var(--spacing)*3);
+}
+.uni-caption-marginx-4 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*4);
+  margin-right: calc(var(--spacing)*4);
+}
+.uni-caption-marginx-5 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*5);
+  margin-right: calc(var(--spacing)*5);
+}
+.uni-caption-marginx-6 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*6);
+  margin-right: calc(var(--spacing)*6);
+}
+.uni-caption-marginx-7 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*7);
+  margin-right: calc(var(--spacing)*7);
+}
+.uni-caption-marginx-8 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*8);
+  margin-right: calc(var(--spacing)*8);
+}
+.uni-caption-marginx-9 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*9);
+  margin-right: calc(var(--spacing)*9);
+}
+.uni-caption-marginx-10 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*10);
+  margin-right: calc(var(--spacing)*10);
+}
+
+/* Set caption margin-right in multiples of sizing units */
+.uni-caption-marginr-0 .TextAndImage__caption {
+  margin-right: 0;
+}
+.uni-caption-marginr-1 .TextAndImage__caption {
+  margin-right: calc(var(--spacing)*1);
+}
+.uni-caption-marginr-2 .TextAndImage__caption {
+  margin-right: calc(var(--spacing)*2);
+}
+.uni-caption-marginr-3 .TextAndImage__caption {
+  margin-right: calc(var(--spacing)*3);
+}
+.uni-caption-marginr-4 .TextAndImage__caption {
+  margin-right: calc(var(--spacing)*4);
+}
+.uni-caption-marginr-5 .TextAndImage__caption {
+  margin-right: calc(var(--spacing)*5);
+}
+.uni-caption-marginr-6 .TextAndImage__caption {
+  margin-right: calc(var(--spacing)*6);
+}
+.uni-caption-marginr-7 .TextAndImage__caption {
+  margin-right: calc(var(--spacing)*7);
+}
+.uni-caption-marginr-8 .TextAndImage__caption {
+  margin-right: calc(var(--spacing)*8);
+}
+.uni-caption-marginr-9 .TextAndImage__caption {
+  margin-right: calc(var(--spacing)*9);
+}
+.uni-caption-marginr-10 .TextAndImage__caption {
+  margin-right: calc(var(--spacing)*10);
+}
+
+/* Set caption margin-left in multiples of sizing units */
+.uni-caption-marginl-0 .TextAndImage__caption {
+  margin-left: 0;
+}
+.uni-caption-marginl-1 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*1);
+}
+.uni-caption-marginl-2 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*2);
+}
+.uni-caption-marginl-3 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*3);
+}
+.uni-caption-marginl-4 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*4);
+}
+.uni-caption-marginl-5 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*5);
+}
+.uni-caption-marginl-6 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*6);
+}
+.uni-caption-marginl-7 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*7);
+}
+.uni-caption-marginl-8 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*8);
+}
+.uni-caption-marginl-9 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*9);
+}
+.uni-caption-marginl-10 .TextAndImage__caption {
+  margin-left: calc(var(--spacing)*10);
+}
+
+/* Set caption font text colors */
+.uni-caption-text-white .TextAndImage__caption .HtmlText__htmlText{
+  color: var(--color-white) !important;
+}
+.uni-caption-text-black .TextAndImage__caption .HtmlText__htmlText{
+  color: var(--color-black) !important;
+}
+
+
+/* Set font sizes for different text components of a banner*/
+
+/* Set font size for banner title*/
+.uni-caption-titl-font-size-client-xs .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: var(--headingXs) !important;
+}
+
+.uni-caption-title-font-size-client-small .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: var(--headingSmall) !important;
+}
+
+.uni-caption-title-font-size-client-medium .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: var(--headingMedium) !important;
+}
+
+.uni-caption-title-font-size-client-large .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: var(--headingLarge) !important;
+}
+
+.uni-caption-title-font-size-client-xl .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: var(--headingXl) !important;
+}
+
+.uni-caption-title-font-size-client-xxl .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: var(--headingXxl) !important;
+}
+
+.uni-caption-titl-font-size-xxs .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: xx-small !important;
+}
+
+.uni-caption-titl-font-size-xs .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: x-small !important;
+}
+
+.uni-caption-title-font-size-small .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: small !important;
+}
+
+.uni-caption-title-font-size-medium .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: medium !important;
+}
+
+.uni-caption-title-font-size-large .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: large !important;
+}
+
+.uni-caption-title-font-size-xl .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: x-large !important;
+}
+
+.uni-caption-title-font-size-xxl .TextAndImage__caption .Heading__heading .HtmlText__htmlText {
+  font-size: xx-large !important;
+}
+
+
+/* Set font size for banner subtitle */
+.uni-caption-subtitle-font-size-client-xs .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: var(--sublineXs) !important;
+}
+
+.uni-caption-subtitle-font-size-client-small .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: var(--sublineSmall) !important;
+}
+
+.uni-caption-subtitle-font-size-client-medium .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: var(--sublineMedium) !important;
+}
+
+.uni-caption-subtitle-font-size-client-large .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: var(--sublineLarge) !important;
+}
+
+.uni-caption-subtitle-font-size-client-xl .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: var(--sublineXl) !important;
+}
+
+.uni-caption-subtitle-font-size-client-xxl .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: var(--sublineXxl) !important;
+}
+
+.uni-caption-subtitle-font-size-xxs .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: xx-small !important;
+}
+
+.uni-caption-subtitle-font-size-xs .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: x-small !important;
+}
+
+.uni-caption-subtitle-font-size-small .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: small !important;
+}
+
+.uni-caption-subtitle-font-size-medium .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: medium !important;
+}
+
+.uni-caption-subtitle-font-size-large .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: large !important;
+}
+
+.uni-caption-subtitle-font-size-xl .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: x-large !important;
+}
+
+.uni-caption-subtitle-font-size-xxl .Subtitle__subtitle .HtmlText__htmlText {
+  font-size: xx-large !important;
+}
+
+/* Set fontsize for banner description */
+.uni-caption-description-font-size-client-xs .TextAndImage__caption .Layout__layout:nth-last-child(3) .HtmlText__htmlText {
+  font-size: var(--bodyXs) !important;
+}
+
+.uni-caption-description-font-size-client-small .TextAndImage__caption .Layout__layout:nth-last-child(3) .HtmlText__htmlText {
+  font-size: var(--bodySmall) !important;
+}
+
+.uni-caption-description-font-size-client-medium .TextAndImage__caption .Layout__layout:nth-last-child(3) .HtmlText__htmlText {
+  font-size: var(--bodyRegular) !important;
+}
+
+.uni-caption-description-font-size-client-large .TextAndImage__caption .Layout__layout:nth-last-child(3) .HtmlText__htmlText {
+  font-size: var(--bodyLarge) !important;
+}
+
+.uni-caption-description-font-size-xxs .TextAndImage__caption .Layout__layout:nth-last-child(3) .HtmlText__htmlText {
+  font-size: xx-small !important;
+}
+
+.uni-caption-description-font-size-xs .TextAndImage__caption .Layout__layout:nth-last-child(3) .HtmlText__htmlText {
+  font-size: x-small !important;
+}
+
+.uni-caption-description-font-size-small .TextAndImage__caption .Layout__layout:nth-last-child(3) .HtmlText__htmlText {
+  font-size: small !important;
+}
+
+.uni-caption-description-font-size-medium .TextAndImage__caption .Layout__layout:nth-last-child(3) .HtmlText__htmlText {
+  font-size: medium !important;
+}
+
+.uni-caption-description-font-size-large .TextAndImage__caption .Layout__layout:nth-last-child(3) .HtmlText__htmlText {
+  font-size: large !important;
+}
+
+.uni-caption-description-font-size-xl .TextAndImage__caption .Layout__layout:nth-last-child(3) .HtmlText__htmlText {
+  font-size: x-large !important;
+}
+
+.uni-caption-description-font-size-xxl .TextAndImage__caption .Layout__layout:nth-last-child(3) .HtmlText__htmlText {
+  font-size: xx-large !important;
+}
+
+
+/* Set fontsize for banner disclaimer */
+.uni-caption-disclaimer-font-size-client-xs .TextAndImage__caption .Layout__layout:last-child .HtmlText__htmlText {
+  font-size: var(--bodyXs) !important;
+}
+
+.uni-caption-disclaimer-font-size-client-small .TextAndImage__caption .Layout__layout:last-child .HtmlText__htmlText {
+  font-size: var(--bodySmall) !important;
+}
+
+.uni-caption-disclaimer-font-size-client-medium .TextAndImage__caption .Layout__layout:last-child .HtmlText__htmlText {
+  font-size: var(--bodyRegular) !important;
+}
+
+.uni-caption-disclaimer-font-size-client-large .TextAndImage__caption .Layout__layout:last-child .HtmlText__htmlText {
+  font-size: var(--bodyLarge) !important;
+}
+
+.uni-caption-disclaimer-font-size-xxs .TextAndImage__caption .Layout__layout:last-child .HtmlText__htmlText {
+  font-size: xx-small !important;
+}
+
+.uni-caption-disclaimer-font-size-xs .TextAndImage__caption .Layout__layout:last-child .HtmlText__htmlText {
+  font-size: x-small !important;
+}
+
+.uni-caption-disclaimer-font-size-small .TextAndImage__caption .Layout__layout:last-child .HtmlText__htmlText {
+  font-size: small !important;
+}
+
+.uni-caption-disclaimer-font-size-medium .TextAndImage__caption .Layout__layout:last-child .HtmlText__htmlText {
+  font-size: medium !important;
+}
+
+.uni-caption-disclaimer-font-size-large .TextAndImage__caption .Layout__layout:last-child .HtmlText__htmlText {
+  font-size: large !important;
+}
+
+.uni-caption-disclaimer-font-size-xl .TextAndImage__caption .Layout__layout:last-child .HtmlText__htmlText {
+  font-size: x-large !important;
+}
+
+.uni-caption-disclaimer-font-size-xxl .TextAndImage__caption .Layout__layout:last-child .HtmlText__htmlText {
+  font-size: xx-large !important;
+}
+
+.uni-margin-bottom-Xxxxs {
+  margin-bottom: var(--layoutXxxxs);
+}
+
+.uni-margin-bottom-Xxxs {
+  margin-bottom: var(--layoutXxxs);
+}
+
+.uni-margin-bottom-Xxs {
+  margin-bottom: var(--layoutXxs);
+}
+
+.uni-margin-bottom-Xs {
+  margin-bottom: var(--layoutXs);
+}
+
+.uni-margin-bottom-small {
+  margin-bottom: var(--layoutSmall);
+}
+
+.uni-margin-bottom-layoutMedium {
+  margin-bottom: var(--layoutMedium);
+}
+
+.uni-margin-bottom-Large {
+  margin-bottom: var(--layoutLarge);
+}
+
+.uni-margin-bottom-Xl {
+  margin-bottom: var(--layoutXl);
+}
+
+.uni-margin-bottom-Xxl {
+  margin-bottom: var(--layoutXxl);
+}
+
+.uni-margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+/* Aspect ratio used for padding around videos */
+.uni-video-aspect-ratio-1-1 .Video__container {
+  aspect-ratio: 1 / 1;
+}
+
+.uni-video-aspect-ratio-100-113 .Video__container {
+  aspect-ratio: 100 / 113;
+}
+
+.uni-video-aspect-ratio-9-10 .Video__container {
+  aspect-ratio: 9 / 10;
+}
+
+.uni-video-aspect-ratio-4-5 .Video__container {
+  aspect-ratio: 4 / 5;
+}
+
+.uni-video-aspect-ratio-3-4 .Video__container {
+  aspect-ratio: 3 / 4;
+}
+
+.uni-video-aspect-ratio-4-3 .Video__container {
+  aspect-ratio: 4 / 3;
+}
+
+.uni-video-aspect-ratio-16-9 .Video__container {
+  aspect-ratio: 16 / 9;
+}
+
+.uni-video-aspect-ratio-9-16 .Video__container {
+  aspect-ratio: 9 / 16;
+}
+
+.uni-video-aspect-ratio-3-2 .Video__container {
+  aspect-ratio: 3 / 2;
+}
+
+.uni-video-aspect-ratio-5-4 .Video__container {
+  aspect-ratio: 5 / 4;
+}
+
+.uni-video-aspect-ratio-5-3 .Video__container {
+  aspect-ratio: 5 / 3;
+}
+
+.uni-video-no-padding-top .Video__container {
+  padding-top: 0 !important;
+}
+
+/* Set videos height to match its container */
+.uni-video-full-height {
+  & > div {
+    height: 100%;
+  }
+  .Video__container {
+    height: 100%;
+  }
+}
+
+/* CSS fix for Shipping Tax Id tooltip in mobile*/
+@media (max-width: 992px) {
+  html[dir] .Tooltip__tooltip.Tooltip__end {
+    left: 50% !important;
+  }
+}

@@ -1,0 +1,51 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Francois';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url('/themes/fonts/francois/francois-one-v15-latin-regular.woff') format('woff'),
+    url('/themes/fonts/francois/francois-one-v15-latin-regular.woff2') format('woff2');
+}
+
+
+@font-face{
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local('HelveticaNeue-Light'),
+    url("/themes/fonts/helvetica/light/3a46542f-f429-4821-9a88-62e3be54a640.woff2") format("woff2"),
+    url("/themes/fonts/helvetica/light/50ac1699-f3d2-47b6-878f-67a368a17c41.woff") format("woff");
+}
+
+@font-face{
+  font-family:"Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('HelveticaNeue'),
+    url("/themes/fonts/helvetica/regular/3dac71eb-afa7-4c80-97f0-599202772905.woff2") format("woff2"),
+    url("/themes/fonts/helvetica/regular/34e0e4c0-c294-49bb-9a8e-1b2cafd54e32.woff") format("woff");
+}
+
+@font-face{
+  font-family:"Helvetica";
+  font-style: medium;
+  font-weight: 500;
+  src:
+    local('HelveticaNeue-Medium'),
+    url("/themes/fonts/helvetica/medium/5b1fbd62-45dc-4433-a7df-a2b24a146411.woff2") format("woff2"),
+    url("/themes/fonts/helvetica/medium/050b1948-f226-4d20-a65a-15d8ed031222.woff") format("woff");
+}
+
+@font-face{
+  font-family:"Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('HelveticaNeue-Bold'),
+    url("/themes/fonts/helvetica/bold/531c5a28-5575-4f58-96d4-a80f7b702d7b.woff2") format("woff2"),
+    url("/themes/fonts/helvetica/bold/439c5962-f9fe-4eaf-a1f6-f41d42edba75.woff") format("woff");
+}
+

@@ -1,0 +1,321 @@
+/* ACTIVE STATES */
+
+.activeState--1.active {
+  color: black;
+}
+
+/* HOVER STATES */
+
+.hoverState--1.hover,
+.hoverState--1:hover {
+  color: rgba(118,118,118,1);
+}
+
+/** BUTTONS **/
+
+.button--text {
+  display: inline-flex;
+  position: relative;
+}
+
+.button--selectable {
+  font-size: 1.2rem;
+  border: 1px solid var(--greyOnLight);
+  color: var(--colorActivePrimary);
+  text-transform: uppercase;
+}
+
+.button--selectable:hover {
+  border: 1px solid black;
+}
+
+.button--selectable.selected:not(.disabled) {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.button--selectable.disabled {
+  background-color: var(--greyLight);
+  color: var(--greyMedium);
+  cursor: pointer;
+}
+
+.button--primary {
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: 1px solid black;
+  text-transform: uppercase;
+  transition: 0.2s;
+  min-width: 100px;
+}
+
+.button--primary:hover {
+  background-color: rgba(51, 51, 51, 1);
+}
+
+.button--primary.disabled {
+  background-color: var(--greyLight);
+  color: var(--greyMedium);
+  cursor: pointer;
+}
+
+.button--secondary {
+  background-color: var(--bodyBackgroundColor);
+  border-color: var(--greyDark);
+  color: black;
+}
+
+.button--secondary:hover {
+  background-color: var(--greyLight);
+}
+
+.button--promoPrimary {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+  min-width: 140px;
+}
+
+.button--promoPrimary:hover {
+  background-color: var(--greyDark);
+}
+
+.button--promoPrimary.disabled {
+  background-color: var(--greyLight);
+  color: var(--greyMedium);
+}
+
+.button--sortBy {
+  margin-bottom: 0.5rem;
+}
+
+.button--pulloutSortBy {
+  margin: 0.5rem 0;
+}
+
+.button--sortBy,
+.button--pulloutSortBy {
+  color: var(--greyInactive);
+}
+
+.button--sortBy:hover,
+.button--sortBy.active,
+.button--pulloutSortBy:hover,
+.button--pulloutSortBy.active {
+  color: black;
+}
+
+/* LINKS */
+
+.BrowseByPillList .chip-link {
+  background-color: #000000;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 2px;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  white-space: nowrap;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.BrowseByPillList .chip-link:hover {
+  text-decoration: underline;
+}
+
+.linkText--menuLinkPrimary,
+.linkText--menuLinkSecondary {
+  color: var(--greyMedium);
+  font-family: var(--fontPrimary);
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+  text-transform: var(--variableCasing);
+}
+ 
+/* var(--associatedImage) available to linkText for pullout */
+
+.linkText--pulloutLink,
+.linkText--pulloutBack,
+.linkText--pulloutSupportLink,
+.linkText--languageToggle {
+  align-items: center;
+  border-bottom: 1px solid var(--greyLight);
+  display: flex;
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+  height: 55px;
+  padding: 0 2rem;
+  text-transform: var(--variableCasing);
+  width: 100%;
+}
+
+.LanguageToggle__iconWrapper{
+  left: -5px;
+  position: relative;
+}
+
+.linkText--querySuggestion {
+  font-size: 12px;
+  color: #707070;
+}
+
+.linkText--popularSearch {
+  font-size: 12px;
+  letter-spacing: .05rem;
+  color: #707070;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.linkText--popularSearch:hover {
+  color: #222222;
+  background-color: #dddddd;
+}
+
+.BrandName__brandLink .Heading__heading .HtmlText__htmlText {
+  color: var(--greyDark);
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.BrandName__brandLink .Heading__heading .HtmlText__htmlText:hover {
+  text-decoration: none;
+}
+
+.ProductOptionsSize__flexGrid {
+  margin-bottom: 0.1rem;
+}
+
+/* if product tray tabs break */
+
+.ProductTrayTabs__tab{
+  font-size: 1.4rem;
+}
+
+/* for stacking buttons banner */
+
+.uo-hero-banner-mobile .TextAndImage__buttonsWrapper .ButtonGroup__horizontal{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.uo-hero-banner-mobile .TextAndImage__buttonsWrapper .ButtonGroup__horizontal > .Button__buttonWrapper:last-child {
+  margin-right: 2rem;
+}
+
+.uo-button-wrap .TextAndImage__buttonsWrapper .ButtonGroup__horizontal{
+  display: flex;
+  justify-content: center;
+  flex-flow: column !important;
+}
+
+.uo-button-wrap .ButtonGroup__horizontal a:nth-child(1){
+  margin-right: 0;
+  margin-bottom: 12px;
+}
+
+.uo-subtitle-all-caps .Subtitle__subtitle{
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* PDP view full size chart */
+a[name="View full size chart"] {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.Price__tax {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+@media (min-width: 993px) {
+  .ControlTrack__controlTrack {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .ControlTrack__controlTrack {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.QuantitySelector__large .QuantitySelector__number, .QuantitySelector__large .QuantitySelector__button {
+  height: 32px;
+  width: 32px;
+}
+
+.SelectableBox__button.SelectableBox__large {
+  height: 4rem;
+  min-width: 4rem;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.QuantitySelector__margin {
+  margin-bottom: 10px;
+}
+
+.ZeroState__container {
+  margin-top: 1px;
+}
+
+.ZeroState__textWrapper {
+  margin-bottom: 20px;
+}
+
+/* .uo-underline-cta .Button__buttonWrapper .button--primary{
+  border: transparent !important;
+  border-bottom: 1px solid black;
+  width: auto !important;
+} */
+
+.uo-black-friday-promo .Layout__layout .AspectRatio__container{
+  object-fit: cover;
+  padding-top: calc((775 / 4320) * 100%);
+}
+
+.uo-black-friday-promo-mobile .Layout__layout .AspectRatio__container{
+  object-fit: contain;
+  padding-top: calc((515 / 1125) * 100%);
+}
+
+.uo-black-friday-promo .Layout__layout{
+  max-width: 1360px;
+  justify-content: center;
+}
+
+.uo-banner-small-bottom-padding .TextAndImage__imageWrapper{
+  margin-bottom: 2.5rem !important;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 993px) {
+  .Video__fullContainer {
+    aspect-ratio: 1440 / 600;
+    height: unset;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .Video__fullContainer {
+    aspect-ratio: 1440 / 600;
+    height: unset;
+    width: 100%;
+  }
+}
