@@ -165,7 +165,7 @@ header {
 
 .hero-contenido button:hover {
 	background-color: white;
-	barder: 1px solid black;
+	border: 1px solid black;
 	color: black;
 	transform: translateX(8px)
 }
