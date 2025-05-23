@@ -589,7 +589,7 @@ height: 90vh;
      padding-left: 0;
     margin-left: 0;
 	flex: 1 1 100%;
-    max-width: 90;
+    max-width: 90px;
 	min-width: unset;
   }
  .inicio h1 {
