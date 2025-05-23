@@ -897,7 +897,12 @@ max-width:100%;
 .derecho button:hover {
 	 transform:scale(.95)
 }
-
+.logo-menu {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
 @media screen and (min-width: 1200px) {
   .contenedor-producto {
     box-sizing: border-box;
