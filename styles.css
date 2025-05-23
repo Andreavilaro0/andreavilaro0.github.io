@@ -699,7 +699,6 @@ height: 90vh;
     border:  white;
     padding: .7rem;
     border-radius: 2rem;
-    background-color: white;
     font-weight: 600;
     margin-top: 3rem;
     font-size: .8rem;
@@ -780,7 +779,7 @@ height: 90vh;
     padding: .7rem;
     border-radius: 2rem;
     background-color: white;
-    font-weight: 600;
+    font-weight: 600pz;
     margin-top: 3rem;
     font-size: .8rem;
     cursor: pointer;
@@ -836,12 +835,11 @@ height: 90vh;
 
 .Img-principal img {
 max-width:100%;
-max-height:auto;
 }
 
 .opcion-flex img{
 	width: 75px;
-	paddign: 10px;
+	padding: 10px;
 }
 
 .derecho {
