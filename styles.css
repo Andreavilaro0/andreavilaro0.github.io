@@ -119,7 +119,7 @@ header {
 }
 
 .hero-seccion {
-  background-image: url("imagenes/menu.webp");
+  background-image: url("Imagenes/menu.webp");
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -431,7 +431,7 @@ height: 90vh;
 }
 
 .inicio-women {
-	background-image: url("imagenes/girls.png");
+	background-image: url("Imagenes/girls.png");
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -610,7 +610,7 @@ height: 90vh;
 
 
 .inicio-men{
-	background-image: url("imagenes/producto-men/men1.png");
+	background-image: url("Imagenes/producto-men/men1.png");
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -624,7 +624,7 @@ height: 90vh;
 }
 
 .inicio-accesories{
-	background-image: url("imagenes/accesories.png");
+	background-image: url("Imagenes/accesories.png");
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
